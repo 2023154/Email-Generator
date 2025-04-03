@@ -5,6 +5,7 @@
 package email.generator;
 
 import java.io.BufferedWriter;
+import java.util.Scanner;
 
 /**
  *
@@ -21,6 +22,13 @@ public class EmailGenerator {
     static BufferedWriter writer;//add buffer to write the email to the file
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Scanner scanner = new Scanner(System.in);
+      
+            System.out.print("Output filename (e.g. output.txt): ");
+            String filename = scanner.next();
+           
+                             
         
         
     }
