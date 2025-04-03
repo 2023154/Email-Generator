@@ -37,9 +37,10 @@ public class EmailGenerator {
             String email = "@student.example.org";
             
             try{
-                while(student  < 2021999){
-                    writer = new BufferedWriter(new FileWriter(filename));
+                writer = new BufferedWriter(new FileWriter(filename));
                     System.out.println("Generating combinations...");
+                while(student  < 2021999){
+                    
                     
                     String fullEmail = student +email;
                     writer.write(fullEmail);
