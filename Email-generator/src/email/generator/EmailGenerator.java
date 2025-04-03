@@ -28,6 +28,12 @@ public class EmailGenerator {
             System.out.print("Output filename (e.g. output.txt): ");
             String filename = scanner.next();
            
+            
+            //this where you going to write the email you want
+            // you can change the int for waht you want 
+            //the email is starting with a year and three number after the year
+            int student = 2021000;
+            String email = "@student.example.org";
                              
         
         
