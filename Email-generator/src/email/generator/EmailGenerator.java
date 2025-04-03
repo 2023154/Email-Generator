@@ -44,6 +44,7 @@ public class EmailGenerator {
                     
                     String fullEmail = student +email;
                     writer.write(fullEmail);
+                    writer.newLine();
                     student++;
                 }
             
