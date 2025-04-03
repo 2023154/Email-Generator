@@ -5,6 +5,7 @@
 package email.generator;
 
 import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.util.Scanner;
 
 /**
@@ -34,6 +35,22 @@ public class EmailGenerator {
             //the email is starting with a year and three number after the year
             int student = 2021000;
             String email = "@student.example.org";
+            
+            try{
+                while(student  < 2021999){
+                    writer = new BufferedWriter(new FileWriter(filename));
+                    System.out.println("Generating combinations...");
+                    
+                    String fullEmail = student +email;
+                    writer.write(fullEmail);
+                    student++;
+                }
+            
+            
+            
+            }catch(Exception e){
+                System.out.println("err");
+            }
                              
         
         
